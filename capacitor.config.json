@@ -1,0 +1,8 @@
+{
+  "appId": "com.dsjn.starterstencilionicfirebaseauth",
+  "appName": "starter-stencil-ionic-firebase-auth",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
