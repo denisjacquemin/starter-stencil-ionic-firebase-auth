@@ -6,4 +6,4 @@ export const firebaseConfig = {
     storageBucket: "starter-firebase-auth.appspot.com",
     messagingSenderId: "32306416230",
     appId: "1:32306416230:web:0778f09fb61bc3b75d3ba7"
-}
+} 
