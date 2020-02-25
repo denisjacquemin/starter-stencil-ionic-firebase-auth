@@ -10,17 +10,26 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface AppHome {}
+  interface AppEmailpwdSignin {}
+  interface AppEmailpwdSignup {}
   interface AppRoot {}
+  interface AppSigned {}
+  interface AppWelcome {}
 }
 
 declare global {
 
 
-  interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
-  var HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
+  interface HTMLAppEmailpwdSigninElement extends Components.AppEmailpwdSignin, HTMLStencilElement {}
+  var HTMLAppEmailpwdSigninElement: {
+    prototype: HTMLAppEmailpwdSigninElement;
+    new (): HTMLAppEmailpwdSigninElement;
+  };
+
+  interface HTMLAppEmailpwdSignupElement extends Components.AppEmailpwdSignup, HTMLStencilElement {}
+  var HTMLAppEmailpwdSignupElement: {
+    prototype: HTMLAppEmailpwdSignupElement;
+    new (): HTMLAppEmailpwdSignupElement;
   };
 
   interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
@@ -28,19 +37,40 @@ declare global {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
   };
+
+  interface HTMLAppSignedElement extends Components.AppSigned, HTMLStencilElement {}
+  var HTMLAppSignedElement: {
+    prototype: HTMLAppSignedElement;
+    new (): HTMLAppSignedElement;
+  };
+
+  interface HTMLAppWelcomeElement extends Components.AppWelcome, HTMLStencilElement {}
+  var HTMLAppWelcomeElement: {
+    prototype: HTMLAppWelcomeElement;
+    new (): HTMLAppWelcomeElement;
+  };
   interface HTMLElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
+    'app-emailpwd-signin': HTMLAppEmailpwdSigninElement;
+    'app-emailpwd-signup': HTMLAppEmailpwdSignupElement;
     'app-root': HTMLAppRootElement;
+    'app-signed': HTMLAppSignedElement;
+    'app-welcome': HTMLAppWelcomeElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface AppHome {}
+  interface AppEmailpwdSignin {}
+  interface AppEmailpwdSignup {}
   interface AppRoot {}
+  interface AppSigned {}
+  interface AppWelcome {}
 
   interface IntrinsicElements {
-    'app-home': AppHome;
+    'app-emailpwd-signin': AppEmailpwdSignin;
+    'app-emailpwd-signup': AppEmailpwdSignup;
     'app-root': AppRoot;
+    'app-signed': AppSigned;
+    'app-welcome': AppWelcome;
   }
 }
 
@@ -50,8 +80,11 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
-      'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
+      'app-emailpwd-signin': LocalJSX.AppEmailpwdSignin & JSXBase.HTMLAttributes<HTMLAppEmailpwdSigninElement>;
+      'app-emailpwd-signup': LocalJSX.AppEmailpwdSignup & JSXBase.HTMLAttributes<HTMLAppEmailpwdSignupElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'app-signed': LocalJSX.AppSigned & JSXBase.HTMLAttributes<HTMLAppSignedElement>;
+      'app-welcome': LocalJSX.AppWelcome & JSXBase.HTMLAttributes<HTMLAppWelcomeElement>;
     }
   }
 }
